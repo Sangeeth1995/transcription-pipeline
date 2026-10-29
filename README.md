@@ -16,6 +16,21 @@ upload ─► check the file (ffprobe) ─► convert to 16 kHz mono WAV (ffmpeg
 
 ---
 
+## Architecture
+
+![Architecture: two entry points share one pipeline of five single-purpose stages](docs/architecture.png)
+
+The design is a layered pipeline. Two thin entry points, the CLI and the HTTP API, call one
+orchestrator (`pipeline.py`), which runs five single-purpose stages in order. Only the stages use
+external tools: ffmpeg and ffprobe for audio, and the Whisper model for speech recognition.
+
+Read it from the top down: both entry points call the same orchestrator, which passes data from
+left to right through the stages. Dashed lines show which stages call outside tools. Because each
+stage has one job and the engine is behind an interface, any stage can be tested or replaced on
+its own.
+
+---
+
 ## Quick start
 
 Requirements: Python 3.10+ and ffmpeg (`brew install ffmpeg` on macOS, `apt install ffmpeg` on Linux).
