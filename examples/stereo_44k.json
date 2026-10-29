@@ -1,0 +1,47 @@
+{
+  "text": "God, as a direct consequence of the sin which man thus punished, had given her a lovely child, whose place was on that same dishonored bosom to connect her parent forever with the race and descent of mortals, and to be finally a blessed soul in heaven.",
+  "language": null,
+  "duration": 16.715,
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 6.0,
+      "text": "God, as a direct consequence of the sin which man thus punished, had given her a lovely child,",
+      "confidence": null,
+      "flags": []
+    },
+    {
+      "id": 1,
+      "start": 6.0,
+      "end": 13.0,
+      "text": "whose place was on that same dishonored bosom to connect her parent forever with the race and descent of mortals,",
+      "confidence": null,
+      "flags": []
+    },
+    {
+      "id": 2,
+      "start": 13.0,
+      "end": 16.0,
+      "text": "and to be finally a blessed soul in heaven.",
+      "confidence": null,
+      "flags": []
+    }
+  ],
+  "metadata": {
+    "engine": "sherpa-onnx",
+    "model": "sherpa-onnx-whisper-tiny.en",
+    "source": {
+      "format": "mp3",
+      "codec": "mp3",
+      "sample_rate": 44100,
+      "channels": 2,
+      "duration": 16.74449
+    },
+    "chunks": 1,
+    "speech_seconds": 16.325,
+    "failed_chunks": [],
+    "processing_seconds": 2.109,
+    "real_time_factor": 0.126
+  }
+}

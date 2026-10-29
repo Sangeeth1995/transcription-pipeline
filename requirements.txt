@@ -1,0 +1,9 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+numpy>=1.26
+faster-whisper>=1.1        # default engine (CTranslate2 Whisper)
+# sherpa-onnx>=1.10        # optional offline ONNX engine: pip install sherpa-onnx
+# dev / tests
+pytest>=8
+httpx>=0.27
